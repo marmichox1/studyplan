@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "outDir": "dist/server",
+    "noEmit": false,
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "include": ["server/**/*", "shared/**/*", "db/**/*"],
+  "exclude": ["node_modules", "client"]
+}
